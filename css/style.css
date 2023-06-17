@@ -54,13 +54,14 @@ button {
 
 /* Стилізація Контейнерів */
 .container {
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
   margin: 0 auto;
-  width: 1158px;
-  padding-right: 15px;
-  padding-left: 15px;
-  /* border: 1px solid tomato; */
 }
+
 /* Стилізація Header */
+
 .header-container {
   display: flex;
 }
@@ -176,22 +177,23 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
-  padding: 188px 0;
+  max-width: 428px;
+  padding: 112px 0;
   margin: 0 auto;
 }
 
 .hero-title {
-  margin: 0px auto 48px;
-  font-size: 56px;
-  line-height: 1.07;
+  margin: 0px auto 72px;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  text-transform: capitalize;
+  max-width: 320px;
   color: #ffffff;
 }
 
@@ -460,7 +462,7 @@ button {
 /* Стилізація Features */
 
 .features {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -479,84 +481,58 @@ button {
 
 .features-list {
   display: flex;
-  gap: 24px;
-}
-
-.features-item {
-  width: calc((100% - 72px) / 4);
+  flex-direction: column;
+  gap: 72px;
 }
 
 .feauters-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 264px;
-  height: 112px;
-  flex-grow: 0;
-  padding: 24px 100px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-
-.feauter-icon-item {
-  fill: #404bbf;
-  display: flex;
+  display: none;
 }
 
 .features-sub-title {
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  color: var(--second-main-color);
+  text-align: center;
+  margin-bottom: 8px;
+  color: #2e2f42;
 }
 
 .features-text {
+  font-weight: 500;
   font-size: var(--main-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
 }
 
 /* Стилізація Works */
 
 .section-works {
-  padding-bottom: 120px;
-}
-
-.works-list {
-  display: flex;
-  gap: 24px;
-}
-
-.works-item {
-  width: calc((100% - 48px) / 3);
-}
-
-.works-title {
-  margin-bottom: 72px;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--second-main-color);
+  display: none;
 }
 
 /* Стилізація Our Team */
+
 .section-team {
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+}
+
+.section-team > .container {
+  max-width: 296px;
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
 }
+
 .team-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -630,8 +606,8 @@ button {
 /* Стилізація Customers */
 
 .section-customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .customer-title {
   font-size: 36px;
@@ -644,12 +620,14 @@ button {
 }
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 72px;
   justify-content: center;
   align-items: center;
 }
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 .customers-link {
@@ -686,7 +664,7 @@ button {
 /* Стилізація Footer */
 
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: var(--second-main-color);
 }
 
@@ -728,14 +706,25 @@ button {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .footer-logo-container {
-  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
 }
 
 .footer-social {
-  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 72px;
+  text-align: center;
 }
 
 .footer-social-text {
@@ -773,11 +762,9 @@ button {
   background-color: #31d0aa;
 }
 
-.subscribe-container {
-}
-
 .subscribe-form {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
@@ -788,9 +775,10 @@ button {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-email-input {
-  width: 264px;
+  width: 398px;
   height: 40px;
   padding-left: 16px;
   padding-right: 16px;
@@ -806,9 +794,6 @@ button {
   background-color: transparent;
 }
 
-.footer-email-label {
-}
-
 .footer-email-input::placeholder {
   font-size: 12px;
   line-height: 1.5;
@@ -818,7 +803,7 @@ button {
 
 .subscribe-btn {
   display: inline-flex;
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   align-items: center;
   justify-content: center;
