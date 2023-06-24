@@ -63,83 +63,94 @@
           </svg>
         </button>
       </div>
-      <div class="mob-menu js-menu-container">
-        <button type="button" class="close-menu-btn js-close-menu">
-          <svg lass="close-menu-icon" width="8" height="8">
-            <use href="./images/symbol-defs.svg#icon-btn-close-black"></use>
-          </svg>
-        </button>
-        <ul class="mob-menu-list list">
-          <li class="mob-menu-item">
-            <a class="mob-menu-link link current" href="./index.html">Studio</a>
-          </li>
-          <li class="mob-menu-item">
-            <a class="mob-menu-link link" href="./portfolio.html"> Portfolio</a>
-          </li>
-          <li class="mob-menu-item">
-            <a class="mob-menu-link link" href="">Contacts</a>
-          </li>
-        </ul>
-        <ul class="mob-adress-list list">
-          <li class="mob-adress-list-item">
-            <a class="mob-adress-tel-link link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-          <li class="mob-adress-list-item">
-            <a
-              class="mob-adress-email-link link"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mob-social-list list">
-          <li class="mob-social-item">
-            <a
-              class="mob-social-link link"
-              href="#"
-              rel="noreferrer noopener nofollow"
-            >
-              <svg class="mob-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mob-social-item">
-            <a
-              class="mob-social-link link"
-              href="#"
-              rel="noreferrer noopener nofollow"
-            >
-              <svg class="mob-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mob-social-item">
-            <a
-              class="mob-social-link link"
-              href="#"
-              rel="noreferrer noopener nofollow"
-            >
-              <svg class="mob-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mob-social-item">
-            <a
-              class="mob-social-link link"
-              href="#"
-              rel="noreferrer noopener nofollow"
-            >
-              <svg class="mob-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <!-- Мобільне меню -->
+      <div class="mob-menu-wrap js-menu-container">
+        <div class="mob-menu">
+          <button type="button" class="close-menu-btn js-close-menu">
+            <svg lass="close-menu-icon" width="8" height="8">
+              <use href="./images/symbol-defs.svg#icon-btn-close-black"></use>
+            </svg>
+          </button>
+          <div class="mob-first-wrap">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html">
+                  Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-second-wrap">
+            <ul class="mob-adress-list list">
+              <li class="mob-adress-list-item">
+                <a class="mob-adress-tel-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-adress-list-item">
+                <a
+                  class="mob-adress-email-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-social-list list">
+              <li class="mob-social-item">
+                <a
+                  class="mob-social-link link"
+                  href="#"
+                  rel="noreferrer noopener nofollow"
+                >
+                  <svg class="mob-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a
+                  class="mob-social-link link"
+                  href="#"
+                  rel="noreferrer noopener nofollow"
+                >
+                  <svg class="mob-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a
+                  class="mob-social-link link"
+                  href="#"
+                  rel="noreferrer noopener nofollow"
+                >
+                  <svg class="mob-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a
+                  class="mob-social-link link"
+                  href="#"
+                  rel="noreferrer noopener nofollow"
+                >
+                  <svg class="mob-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Основний контент сайту -->
@@ -216,6 +227,7 @@
           <ul class="works-list list">
             <li class="works-item">
               <img
+                srcset="./images/PC_1.jpg 1x, ./images/PC_1_2x.jpg 2x"
                 src="./images/PC_1.jpg"
                 alt="Photo of PC"
                 width="360"
@@ -224,6 +236,7 @@
             </li>
             <li class="works-item">
               <img
+                srcset="./images/Phone_1.jpg 1x, ./images/Phone_1_2x.jpg 2x"
                 src="./images/Phone_1.jpg"
                 alt="Photo of Cellphone"
                 width="360"
@@ -232,6 +245,7 @@
             </li>
             <li class="works-item">
               <img
+                srcset="./images/Combo_1.jpg 1x, ./images/Combo_1_2x.jpg 2x"
                 src="./images/Combo_1.jpg"
                 alt="Photo of PC and cellphone"
                 width="360"
@@ -248,6 +262,10 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/Mark_Guero.jpg    1x,
+                  ./images/Mark_Guero_2x.jpg 2x
+                "
                 src="./images/Mark_Guero.jpg"
                 alt="Photo of Mark Guerrero"
                 width="264"
@@ -305,6 +323,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/Tom_Ford.jpg 1x, ./images/Tom_Ford_2x.jpg 2x"
                 src="./images/Tom_Ford.jpg"
                 alt="Photo of Tom Ford"
                 width="264"
@@ -362,6 +381,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/Camila_Garcia.jpg    1x,
+                  ./images/Camila_Garcia_2x.jpg 2x
+                "
                 src="./images/Camila_Garcia.jpg"
                 alt="Photo of Camila Garcia"
                 width="264"
@@ -419,6 +442,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/Daniel_Wilson.jpg    1x,
+                  ./images/Daniel_Wilson_2x.jpg 2x
+                "
                 src="./images/Daniel_Wilson.jpg"
                 alt="Photo of Daniel Wilson"
                 width="264"
@@ -638,7 +665,7 @@
       </div>
     </footer>
     <!-- Модальне вікно -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -646,7 +673,7 @@
           </svg>
         </button>
         <p class="form-title">Leave your contacts and we will call you back</p>
-        <form name="modal-form">
+        <form name="modal-form" class="modal-form">
           <div class="modal-field">
             <label for="user-name" class="form-label">Name</label>
             <div class="input-wrap">
@@ -709,7 +736,7 @@
           <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
   </body>
